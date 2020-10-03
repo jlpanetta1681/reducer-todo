@@ -1,5 +1,5 @@
 import React, { useReducer, useState } from 'react';
-import { todo, reducer } from '../reducers/reducer';
+import { todo, reducer } from '../reducers/Reducer.js';
 
 export default function TodoList() {
 	const [ state, dispatch ] = useReducer(reducer, todo);
@@ -42,7 +42,7 @@ export default function TodoList() {
 									className="completed"
 									onClick={() => dispatch({ type: 'COMPLETE', payload: item.id })}
 								>
-									{item.item}
+									{item.item}y
 								</h1>
 							</div>
 						)}
